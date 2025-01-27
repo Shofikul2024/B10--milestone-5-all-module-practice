@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>summary event handlers</title>
 </head>
+
 <body>
     <h1>Exploreb dom handlers</h1>
 
-    <button onclick=" makeGreen()">  make  Green </button>
-     
-    
+    <button onclick=" makeGreen()"> make Green </button>
 
 
-    <script> 
- function makeGreen() {
-
-    document.body.style.backgroundColor='green' ;
- }
-
-</script>
-<br>
-<br>
 
 
-<input id="user-email" type="email">
-<script>
+    <script>
+        function makeGreen() {
 
-    document.getElementById('user-email').addEventListener ('keyup' , function (event){
-        console.log(event.target.value)
-    })
+            document.body.style.backgroundColor = 'green';
+        }
 
-</script>
+    </script>
+    <br>
+    <br>
 
+
+    <input id="user-email" type="email">
+    <script>
+
+        document.getElementById('user-email').addEventListener('keyup', function (event) {
+            console.log(event.target.value)
+        })
+
+
+
+    </script>
+
+    <br>
+    <br>
+
+    <input id="user-email2" type="email">
+
+    <script>
+        document.getElementById('user-email2').addEventListener('keyup', function (event) {
+
+            console.log(event.target.value);
+
+        })
+
+    </script>
 </body>
+
 </html>
