@@ -10,6 +10,8 @@
 
     <button onclick=" makeGreen()">  make  Green </button>
      
+    
+
 
     <script> 
  function makeGreen() {
@@ -17,7 +19,19 @@
     document.body.style.backgroundColor='green' ;
  }
 
+</script>
+<br>
+<br>
 
-    </script>
+
+<input id="user-email" type="email">
+<script>
+
+    document.getElementById('user-email').addEventListener ('keyup' , function (event){
+        console.log(event.target.value)
+    })
+
+</script>
+
 </body>
 </html>
